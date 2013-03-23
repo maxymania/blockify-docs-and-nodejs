@@ -14,3 +14,7 @@ the blocks in the network.
 # (node.js)-JavaScript Files
 
 - dblock_hdr.js : a block-header parser and generator
+- block.js : block utils (currently XOR)
+- block_store_util.js : block store util
+- url.js : the blockify-url-parser
+- disk_kv : a KV store (for storing blocks) written in pure Javascript
