@@ -15,13 +15,13 @@ function parse(header){
 		if(fld=hdr[i].match(FIELD))
 			obj[fld[1]]=fld[2];
 	return {
-		ts:parseInt(obj.rs),
+		ts:parseInt(obj.ts),
 		nt:parseInt(obj.nt),
 		ddblock:obj.ddblock=='t'
 	} ;
 }
 function generate(ts,nt,ddblock){
-	var s = 'ts:'+(Math.floor(ts))+';nt:'+(Math.floor(ts))+';ddblock:'+(ddblock?'t':'f');
+	var s = 'ts:'+(Math.floor(ts))+';nt:'+(Math.floor(nt))+';ddblock:'+(ddblock?'t':'f');
 	if(s.length>64)return null;
 	var buf = new Buffer(64);
 	var l = buf.write(s);
