@@ -6,6 +6,10 @@ This is because *aindigo* and I decided to implement blockify in node-js,
 cause i stuck in implementing a network functionality and *aindigo* proposed to use BitTorrent's DHT to find
 the blocks in the network.
 
+
+***note that the following documents are Obsolete, since we decided to not use sha1***
+use the documents in `./data2/` instead
+
 # Documents
 
 - blocks.md
